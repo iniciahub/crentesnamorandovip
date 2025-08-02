@@ -13,13 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         /* CSS COMPLETO */
         :root {
             --cor-principal: #6B1D28;
             --cor-destaque: #EAB83E;
-            --cor-vip: #D4AF37; /* Um dourado mais nobre para detalhes VIP */
+            --cor-vip: #D4AF37;
             --cor-texto-escuro: #2c3e50;
             --cor-texto-claro: #4a4a4a;
             --cor-background-claro: #fdfdfd;
@@ -119,6 +121,10 @@
             color: var(--cor-texto-escuro);
         }
 
+        .hero .container {
+            text-align: center;
+        }
+
         .hero .logo {
             max-width: 250px;
             margin-bottom: 30px;
@@ -198,11 +204,10 @@
             gap: 40px;
             list-style: none;
             margin-top: 50px;
-            flex-wrap: wrap;
         }
         
         #como-funciona li {
-            max-width: 300px;
+            max-width: 350px;
         }
         
         #como-funciona .step-number {
@@ -276,11 +281,11 @@
             cursor: pointer;
             position: relative;
             outline: none;
-            list-style: none; /* Remove default marker */
+            list-style: none; /* Remove o marcador padrão */
         }
 
         .faq-item summary::after {
-            content: '\f078'; /* Ícone de seta para baixo */
+            content: '\f078'; /* Ícone de seta para baixo do Font Awesome */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             position: absolute;
@@ -333,17 +338,17 @@
 <body>
 
     <header class="hero">
-        <div class="container">
+        <div class="container" data-aos="fade-in" data-aos-duration="800">
             <img src="https://res.cloudinary.com/dwu4r8y1a/image/upload/v1753927069/20250730_2152_Logotipo_Rom%C3%A2ntico_Crist%C3%A3o_remix_01k1ezat83f1asnk5qyqxret5m_bsnp8v.png" alt="Logo Crentes Namorando VIP" class="logo">
-            <h1>Cansado(a) de Conexões Rasas? Sua Aliança Começa Aqui.</h1>
-            <h2>Acesso exclusivo ao grupo VIP para cristãos que não negociam seus valores e estão prontos para <strong>investir</strong> em um futuro a dois. Um ambiente filtrado, sério e com propósito divino.</h2>
-            <a href="https://pay.cakto.com.br/37oqgkr_508573" class="btn">Quero Acesso ao Grupo VIP</a>
+            <h1 data-aos="fade-up" data-aos-delay="100">Cansado(a) de Conexões Rasas? Sua Aliança Começa Aqui.</h1>
+            <h2 data-aos="fade-up" data-aos-delay="300">Acesso exclusivo ao grupo VIP para cristãos que não negociam seus valores e estão prontos para <strong>investir</strong> em um futuro a dois. Um ambiente filtrado, sério e com propósito divino.</h2>
+            <a href="https://pay.cakto.com.br/37oqgkr_508573" class="btn" data-aos="fade-up" data-aos-delay="500">Quero Acesso ao Grupo VIP</a>
         </div>
     </header>
 
     <main>
         <section id="problema">
-            <div class="container">
+            <div class="container" data-aos="fade-right">
                 <h2>Você se identifica com isso?</h2>
                 <ul>
                     <li>Horas em aplicativos de namoro que só geram conversas vazias e frustração.</li>
@@ -351,48 +356,48 @@
                     <li>O medo de começar algo novo e descobrir um desalinhamento espiritual profundo.</li>
                     <li>A sensação de que está perdendo tempo com quem não busca o mesmo que você: <strong>um relacionamento para honrar a Deus, que culmine em casamento.</strong></li>
                 </ul>
-                <p style="margin-top: 30px;">Se você está cansado de peneirar em um mar de superficialidade, você chegou ao lugar certo. Nós entendemos sua frustração, porque também acreditamos que um relacionamento cristão é uma construção sagrada, não um passatempo.</p>
+                <p style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="200">Se você está cansado de peneirar em um mar de superficialidade, você chegou ao lugar certo. Nós entendemos sua frustração, porque também acreditamos que um relacionamento cristão é uma construção sagrada, não um passatempo.</p>
             </div>
         </section>
 
         <section id="solucao">
-            <div class="container">
+            <div class="container" data-aos="fade-left">
                 <h2>Por isso criamos o Crentes Namorando VIP: Menos Ruído, Mais Propósito.</h2>
-                <p>O que diferencia o grupo VIP? <strong>O compromisso.</strong></p>
-                <p>Criamos uma barreira de entrada intencional – uma pequena taxa de acesso – para garantir que cada pessoa no grupo esteja realmente investida e séria em seu propósito. O seu investimento é o filtro. Isso significa que você não encontrará aqui curiosos. Você encontrará homens e mulheres que, como você, valorizam seu tempo, sua fé e seu futuro, e estão dispostos a dar um passo de fé para construir algo real.</p>
+                <p data-aos="fade-up" data-aos-delay="100">O que diferencia o grupo VIP? <strong>O compromisso.</strong></p>
+                <p data-aos="fade-up" data-aos-delay="300">Criamos uma barreira de entrada intencional – uma pequena taxa de acesso – para garantir que cada pessoa no grupo esteja realmente investida e séria em seu propósito. O seu investimento é o filtro. Isso significa que você não encontrará aqui curiosos. Você encontrará homens e mulheres que, como você, valorizam seu tempo, sua fé e seu futuro, e estão dispostos a dar um passo de fé para construir algo real.</p>
             </div>
         </section>
 
         <section id="beneficios">
             <div class="container">
-                <h2>Ao entrar no Grupo VIP, você terá acesso a um ecossistema de seriedade:</h2>
+                <h2 data-aos="fade-up">Ao entrar no Grupo VIP, você terá acesso a um ecossistema de seriedade:</h2>
                 <div class="beneficios-grid">
-                    <div class="beneficio-card">
+                    <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="100">
                         <i class="fas fa-user-check icon"></i>
                         <h3>Membros Comprometidos</h3>
                         <p>O investimento de R$ 14,90 é o nosso grande filtro, garantindo que todos os participantes levaram a sério a decisão de estar aqui.</p>
                     </div>
-                    <div class="beneficio-card">
+                    <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="200">
                         <i class="fas fa-shield-halved icon"></i>
                         <h3>Ambiente Moderado e Seguro</h3>
                         <p>Nosso time modera o grupo no Telegram para garantir conversas respeitosas, edificantes e focadas em conexões saudáveis.</p>
                     </div>
-                    <div class="beneficio-card">
+                    <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="300">
                         <i class="fas fa-book-bible icon"></i>
                         <h3>Conteúdos Exclusivos</h3>
                         <p>Receba devocionais e materiais que te ajudarão a se preparar para uma aliança, como o e-book "Santidade ou Prazer".</p>
                     </div>
-                    <div class="beneficio-card">
+                    <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="400">
                         <i class="fas fa-handshake-angle icon"></i>
                         <h3>Conexões Intencionais</h3>
                         <p>Um grupo menor e focado significa menos distrações e mais chances de encontrar pessoas genuinamente compatíveis com seus valores.</p>
                     </div>
-                     <div class="beneficio-card">
+                     <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="500">
                         <i class="fas fa-bolt icon"></i>
                         <h3>Acesso Imediato e Direto</h3>
                         <p>Sem burocracia. Após o investimento, seu acesso ao grupo do Telegram é liberado na hora para você começar sua jornada.</p>
                     </div>
-                     <div class="beneficio-card">
+                     <div class="beneficio-card" data-aos="zoom-in-up" data-aos-delay="600">
                         <i class="fas fa-heart-circle-check icon"></i>
                         <h3>Foco e Exclusividade</h3>
                         <p>Esteja em um ambiente onde todos compartilham o mesmo objetivo: encontrar um relacionamento sério e centrado em Cristo.</p>
@@ -403,14 +408,14 @@
 
         <section id="como-funciona">
              <div class="container">
-                <h2>Seu caminho para uma conexão com propósito em 2 passos simples:</h2>
+                <h2 data-aos="fade-up">Seu caminho para uma conexão com propósito em 2 passos simples:</h2>
                 <ol>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="100">
                         <div class="step-number">1</div>
                         <h3>Faça seu Investimento</h3>
                         <p>Clique no botão e efetue o pagamento seguro da taxa única de acesso de R$ 14,90. É o primeiro passo do seu compromisso.</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up" data-aos-delay="300">
                          <div class="step-number">2</div>
                         <h3>Entre Diretamente no Grupo</h3>
                         <p>Após a confirmação do pagamento, você será redirecionado imediatamente para o link de acesso exclusivo ao nosso grupo no Telegram.</p>
@@ -420,7 +425,7 @@
         </section>
         
         <section id="oferta">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="700">
                  <h2>Seu futuro vale um investimento.</h2>
                  <p>Pelo valor de um lanche ou de um café especial, você pode mudar o rumo da sua vida sentimental.<br>Não é um custo, é um investimento em paz de espírito, em tempo bem aproveitado e na possibilidade real de encontrar a pessoa que Deus está preparando para você.</p>
                 <div class="price-box">
@@ -434,7 +439,7 @@
         </section>
         
         <section id="garantia">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <i class="fas fa-hands-praying icon"></i>
                 <h2>Nosso Compromisso com um Ambiente de Propósito</h2>
                 <p>Garantimos um ambiente ativamente moderado para manter o foco, o respeito e o alinhamento com os valores cristãos. O seu investimento nos ajuda a manter uma equipe dedicada a isso. Pessoas que não respeitarem nossas diretrizes de conduta serão removidas para preservar a santidade e seriedade do grupo.</p>
@@ -443,33 +448,33 @@
 
         <section id="faq">
             <div class="container">
-                <h2>Dúvidas Comuns</h2>
+                <h2 data-aos="fade-up">Dúvidas Comuns</h2>
                 <div class="faq-container">
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
                         <details>
                             <summary>O pagamento de R$ 14,90 é mensal?</summary>
                             <p>Não. É uma taxa de acesso <strong>única</strong>. Você paga uma vez para ter acesso vitalício ao grupo, sem mensalidades ou cobranças futuras.</p>
                         </details>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
                         <details>
                             <summary>Onde fica o grupo?</summary>
                             <p>Nosso grupo VIP exclusivo funciona no <strong>Telegram</strong>, um aplicativo seguro e prático que permite melhores interações e organização.</p>
                         </details>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                         <details>
                             <summary>Pagar a taxa garante minha entrada?</summary>
                             <p>Sim. Ao efetuar o investimento, você receberá o acesso direto e imediato ao grupo. A sua atitude de investir já é o primeiro grande filtro que buscamos.</p>
                         </details>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                         <details>
                             <summary>A taxa é reembolsável?</summary>
                             <p>O investimento de R$ 14,90 é uma taxa de acesso único para garantir o compromisso dos membros e, por isso, não é reembolsável após a entrada no grupo. Isso assegura que todos os participantes estejam igualmente investidos na comunidade.</p>
                         </details>
                     </div>
-                    <div class="faq-item">
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                         <details>
                             <summary>O que acontece depois que eu entrar?</summary>
                             <p>Você será acolhido(a) no grupo, receberá as primeiras instruções e materiais, e poderá começar a se apresentar e interagir com os outros membros que, como você, buscam um relacionamento sério e com propósito.</p>
@@ -480,7 +485,7 @@
         </section>
         
         <section id="cta-final" style="background-color: var(--cor-background-escuro);">
-            <div class="container">
+            <div class="container" data-aos="zoom-in">
                 <h2>Chega de esperar que as coisas aconteçam por acaso.</h2>
                 <p>Dê um passo de fé e de atitude. Junte-se a um grupo de cristãos que decidiram parar de procurar e começar a <strong>construir</strong>. Sua aliança futura pode depender da decisão que você tomar hoje.</p>
                 <a href="https://pay.cakto.com.br/37oqgkr_508573" class="btn">Fazer Parte do Grupo VIP Agora</a>
@@ -494,6 +499,15 @@
             <p>&copy; 2025 Crentes Namorando VIP. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Duração da animação em milissegundos
+        once: true,    // Animação ocorre apenas uma vez
+        offset: 100,   // Deslocamento para iniciar a animação
+      });
+    </script>
 
 </body>
 </html>
